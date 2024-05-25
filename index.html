@@ -1,14 +1,191 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>
-		First Web Page
-	</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidit Sharma portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	Hello World from Bisman!!
-</body>
+    <div class="something">
+        <section id = "home">
+            <div class="hero">
+                <nav>
+                    <img src="viditlogo.png" class="logo">
+                </nav>
+                   
+        
+                        
+            </div>
+    
+        </section>
+        <section id ="About" class="about">
+            <div class="main">
+                <div class="about-text">
+                    <h1>ABOUT <span> US </span></h1>
+                    <p style="color:black"> Welcome to Satguru Auto Links, your trusted automotive shop in Kalamboli, 
+                        specializing in providing authorized parts from over 8 major suppliers in India. With years of experience,
+                         we pride ourselves on delivering only the highest quality components, ensuring your vehicle performs at its 
+                         best. Our knowledgeable and friendly team is dedicated to customer satisfaction, offering expert advice 
+                         and competitive pricing. Conveniently located, Satguru Auto Links is committed to building lasting 
+                         relationships with our customers by providing reliable products and exceptional service. Visit us today to 
+                         experience the quality and trust that set us apart!
+                    </p>                    
+                </div>
+        
+            </div>
+    
+        </section>
+        <section id ="work">
+            <div class="something2">
+                <div class="workk">
+                    <h1>S<span>HOP</span></h1>
+                </div>
 
+                <div class=""></div>
+
+                <div class="imaage">
+                
+                    <img class="slider-img" src="photos\Photos\photo1.jpg" alt="Image 1">
+                    <div class="slider-text" style="color:black">1</div>
+                    
+                    
+                    <img class="slider-img" src="photos\Photos\photo2.jpg" alt="Image 2">
+                    <div class="slider-text" style="color:black">2</div>
+    
+                    
+                    <img class="slider-img" src="photos\Photos\photo3.jpg" alt="Image 3">
+                    <div class="slider-text" style="color:black">3</div>  
+             
+      
+                                   
+                    <button class="prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="next" onclick="changeSlide(1)">❯</button>
+    
+                 </div>            
+               
+
+            </div>
+               
+        </section>
+        <section id ="logoinfo" class="logoinfo">
+            <div class="main">
+                <div class="logoinfo">
+                    <h1>AUTHORISE <span> PARTNER OF </span></h1>  
+                                                          
+                </div>
+        
+            </div>
+    
+        </section>
+        <section id = "partner">
+            <div class="partner">
+                <nav>
+                    <img src="lumax.png" class="other">
+                </nav>
+                <nav>
+                    <img src="sadhu.jpg" class="other">
+                </nav>
+                <nav>
+                    <img src="msl.png" class="other">
+                </nav>
+                   
+        
+                        
+            </div>
+    
+        </section>
+        <section id = "partner1">
+            <div class="partner1">
+                <nav>
+                    <img src="GCPA.png" class="other">
+                </nav>
+                <nav>
+                    <img src="elofic.png" class="other">
+                </nav>
+                <nav>
+                    <img src="spark.jpg" class="other">
+                </nav>
+                   
+        
+                        
+            </div>
+    
+        </section>
+    
+        <section id = "partner2">
+         <div class="partner2">
+                <nav>
+                    <img src="brakewel.png" class="other">
+                </nav>
+                 <nav>
+                   <img src="phoenix.jpg" class="other">
+                </nav>
+                <nav>
+                   <img src="sofima.png" class="other">
+                </nav>        
+               
+    
+                    
+        </div>
+
+    </section>
+        <section id = "contact">
+            <div class="something3">
+                <div class="contactt">
+                    <h1>CONTACT<span>US</span></h1>
+                </div>
+
+                <div class="logo-container">                    
+                    <p style="color:black font-size: 100px"> Godown No. 91, Truck Terminal, Near Libra Weigh Bridge, KALAMBOLI,
+                        Navi Mumbai - 410 218, Maharashtra
+                    </p>
+                </div>
+                <div class="info">
+                    <a href="info@satguruauto.com">info@satguruauto.com</a> 
+                
+                <div class="info1">
+                    <p>+91 8087077002</p>
+                </div>
+                
+
+
+
+            </div>
+    
+        </section>
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlide(slideIndex);
+    
+        function changeSlide(n) {
+          showSlide(slideIndex += n);
+        }
+    
+        function showSlide(n) {
+          let i;
+          const slides = document.getElementsByClassName("slider-img");
+          const texts = document.getElementsByClassName("slider-text");
+    
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+    
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            texts[i].style.display = "none";
+          }
+    
+          slides[slideIndex - 1].style.display = "block";
+          texts[slideIndex - 1].style.display = "block";
+        }
+      </script>
+      
+</body>
 </html>

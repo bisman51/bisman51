@@ -1,0 +1,258 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.something {
+    background-color: white
+
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    padding : 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.logo {
+    width: 700px;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(0, 10%, 90%);
+    font-weight: 400;
+}
+
+.content {
+    margin-top : 10%;
+    max-width : 600px;
+}
+
+.content h1 {
+    font-size : 70px;
+    color : #908e8e;
+}
+
+.content p {
+    margin : 10px 0 30px;
+    font-size : 23px;
+    color: #e8e3e3; 
+}
+
+
+
+.about-text {
+    margin-top : 10%;
+    width : 1000px;
+    margin-left: 10%;
+    
+}
+
+.about-text h1 {
+    color : #908e8e;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    margin : 50px 0 100px;   
+    font-size : 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #e8e3e3; 
+    text-align: justify;
+}
+
+.feature-img1 {
+    width : 530px;
+    position: absolute;
+    
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding : 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+span{
+    color: #f9004f;
+}
+
+.something2 {
+    width: 100%;
+    min-height: 100vh;
+    padding : 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.workk {
+    color : #908e8e;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+.imaage {
+    width: 1000px;
+    height : 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top : 160px;
+    right: 100px;
+    left: 100px;
+  }
+
+  /* Images */
+.slider-img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio within the container */
+    max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensures the image doesn't exceed the container's height */
+  }
+
+  /* Text overlay */
+.slider-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+  }
+
+  /* Controls */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    z-index: 2;
+  }
+
+.prev {
+    left: 25px;
+  }
+
+.next {
+    right: 25px;
+  }
+
+.logoinfo h1 {
+    color : #908e8e;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.partner {
+    width: 700px;
+    position: absolute; 
+    margin-top: 10px;
+    left: 10%;
+    
+}
+.partner1 {
+    width: 700px;
+    position: absolute; 
+    margin-top: 10px;
+    left: 40%;
+    
+}
+.partner2 {
+    width: 700px;
+    position: absolute; 
+    margin-top: 10px;
+    left: 70%;
+    
+}
+.something3 {
+    width: 100%;
+    min-height: 100vh;
+    padding : 700px 10%;
+    overflow: hidden;
+    position: relative;
+    justify-content: left;
+}
+
+.contactt {
+    color : #908e8e;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 410px;
+
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.logo-container img {
+    margin: 0 16px; /* Adjust the margin between logos */
+}
+
+.contactt1 {
+    color : #908e8e;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 60px;    
+    margin-left: 100px;
+    
+}
+
+.info {
+    color : #908e8e;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 430px;
+
+}
+
+.info1 {
+    color : #908e8e;
+    font-size: 30px;
+    margin-top: 40px;   
+    justify-content: center;
+}
+
+
+
+
+
+
+
